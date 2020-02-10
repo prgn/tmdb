@@ -1,5 +1,6 @@
 # tmdb
   This automation framework is primarily TestNg and RestAssured based. TestNg helps make this env and suite independent, while RestAssured provides a stable java library to work with RestApis.
+  
   These tests, among others features, demonstrates the ease of response parsing using Response and Json parser, the efficiient use of dataprovider for data driver tests, XSS security testing needed for any input fields like the query params. 
 
 ## Run the test 
