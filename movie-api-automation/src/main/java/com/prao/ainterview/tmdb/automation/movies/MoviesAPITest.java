@@ -27,13 +27,6 @@ public class MoviesAPITest extends TmdbTestUtil{
 	
 	private static final String  INTRNL_LANG_CODE = "sa";
 	URI popularMovieUri,detailsMovieUri;
-	/*
-	private static final Long FQ_TIME_INTERVAL = (long) (15*60*1000);
-	private static final Long TS_HOURLY_OFFSET = (long) (60*60*1000);
-	private static final Long TS_DAILY_OFFSET = (long) (24*60*60*1000);
-	private static final Long TS_MONTHLY_OFFSET = (long) (30*24*60*60*1000);
-	private static final Long TS_MIN_OFFSET = (long) (15*60*1000);
-	public static Properties context = null;*/
 	
 	
 	private void setUp() {
@@ -105,6 +98,17 @@ public class MoviesAPITest extends TmdbTestUtil{
 	
 		Assert.assertEquals(response.getStatusCode(),HttpStatus.SC_OK, "status code was not Httpstatus.SC_OK");
 	}
+	
+	/**
+	 * @throws Exception
+	 * Verify the overview property of the movie is translated to respective language.
+	 * expected status code :200 OK  
+	 * api_key=fb54f1b85b06b34f0b5c921561fc3675&language=fi&page=1
+	 */
+	@Test
+	public void testGetMovieDetailsOverviewInInternationalLanguage() throws Exception {
+		//TODO
+		}
 	
 	//Set of negative cases and needs improvement
 	/***
