@@ -1,9 +1,0 @@
-{
-  "list": [
-    {
-      "parentSourceKey": "${apm.enterpriseSourceKey}",
-      "parentClassificationCode": "ENTERPRISE",
-      "name": ""
-    }  
-    ]
-}
