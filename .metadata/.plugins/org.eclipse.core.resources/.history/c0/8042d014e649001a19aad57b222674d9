@@ -1,0 +1,79 @@
+package com.prao.ainterview.tmdb.automation.movies;
+import static org.junit.Assert.assertTrue;
+import static org.testng.Assert.assertFalse;
+
+import java.net.URI;
+import java.net.URISyntaxException;
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Properties;
+
+import org.apache.http.HttpStatus;
+import org.joda.time.DateTime;
+import org.joda.time.Instant;
+import org.joda.time.format.DateTimeFormat;
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+import com.prao.ainterview.tmdb.automation.util.TmdbTestUtil;
+
+/**
+ * Created by Pragna Rao on 02/06/2020.
+ */
+
+
+public class MoviesAPITest extends TmdbTestUtil{
+	
+	private static final String  SEARCH_BY = "/filtersearch?query=resrc_uid:";
+	private static final Long FQ_TIME_INTERVAL = (long) (15*60*1000);
+	private static final Long TS_HOURLY_OFFSET = (long) (60*60*1000);
+	private static final Long TS_DAILY_OFFSET = (long) (24*60*60*1000);
+	private static final Long TS_MONTHLY_OFFSET = (long) (30*24*60*60*1000);
+	private static final Long TS_MIN_OFFSET = (long) (15*60*1000);
+	public static Properties context = null;
+	
+	DateTime dt = new DateTime();
+	URI uri;
+	String filterQuery, fromTime, toTime; 
+	
+
+	private void setUp() {
+		/*uri = URI.create(getProperty("solr_service_url")
+				+ getProperty("DBSchema")
+
+				+ aggregationType
+				+ SEARCH_BY 
+				+ asset_uid);
+		fromTime = Instant.now().minus(FQ_TIME_INTERVAL).minus(offSet).toString(DateTimeFormat.forPattern("yyyy-MM-dd'T'HH:mm:ss'Z'"));
+		toTime = Instant.now().minus(offSet).toString(DateTimeFormat.forPattern("yyyy-MM-dd'T'HH:mm:ss'Z'"));
+		filterQuery = "event_ts:["+fromTime+"%20TO%20"+toTime+"]";*/
+	}
+	
+	@Test
+	public void testDataInNormalization() throws Exception {
+		setUp();
+		/*Integer hhmmExpected = ((dt.getMinuteOfHour()/15)-1)*15;
+		hhmmExpected =(hhmmExpected < 0) ? (60+hhmmExpected):hhmmExpected;
+		
+		setUp(getProperty("MinAggregation"), TS_MIN_OFFSET, getProperty("em.SoftJace.assetSourcekey"));
+		Response  response =	given().
+								header("Authorization","Bearer "+ getSolrServiceToken()).
+								param("fq", filterQuery).
+								when().
+								get(uri);
+		JsonPath jsonPath = response.jsonPath();
+		
+		Assert.assertEquals(response.getStatusCode(),HttpStatus.SC_OK, "status code was not Httpstatus.SC_OK");
+		Assert.assertTrue(jsonPath.getString("enterprise_uid").contains("ENTERPRISE_4951b25b-3616-30e8-a85d-9239593b35fd"),"Enterprise_uid doesnot match");
+		Assert.assertTrue(jsonPath.getString("hhmm").replace("[", "").replace("]", "").equals(String.format("%02d", hhmmExpected)), "hhmm doesnot match");
+		//Site name will not be stored as part of tuple.
+		//Assert.assertEquals(jsonPath.getString("site_name"),"SunSetSite","Site name SunSetSite doesnot match");
+	*/
+	}
+
+	
+}

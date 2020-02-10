@@ -1,0 +1,11 @@
+{
+  "list": [
+        {
+          "Code": "tariffId",
+          "type": "LONG",
+          "value": [
+            "84546"
+          ]
+        }
+     ] 
+}

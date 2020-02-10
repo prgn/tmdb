@@ -1,0 +1,19 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="APMPatchTest" verbose="1" preserve-order="true">
+  	<test name="APMPatchTest">
+	 <classes>
+		 <class name="com.ge.current.em.automation.ui.APMPatchTest">
+		   <methods>
+        		<exclude name="putEnterprisePropertiesNegativeCase" />
+        		<exclude name="patchTypepropertiesNegativeCase" />
+        		<exclude name="patchTagpropertiesNegativeCase" />
+        		<exclude name="patchSegmentChildrenwithvalidinputs" />
+        		<exclude name="patchAssetpropertiesinvalidID" />
+        		<exclude name="patchAssetpropertieswithvalidinputs" />
+        		<exclude name="patchAssetparentswithvalidinputs" />
+        	</methods>
+     	 </class>
+    </classes>
+	</test>
+</suite>

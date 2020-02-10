@@ -1,0 +1,23 @@
+{
+    "name": "LocNameHere",
+    "locationAlias": "Alias333",
+    "locationType": "BUILDING",
+    "classificationCode": "",
+    "alias": "Assetfb5Alias",
+    "postalAddress": {
+      "streetLine1": "123 Main",
+      "streetLine2": null,
+      "city": "San Ramon",
+      "state": "CA",
+      "region": "WEST",
+      "postalCode": "94582",
+      "country": "USA"
+    },
+    "localCoordinates": {
+      "horizontalRange": 45,
+      "verticalRange": 12,
+      "elevation": null,
+      "locationAliases": null,
+      "angle": null
+    }
+  }

@@ -1,0 +1,11 @@
+{
+	"list":[
+        {
+          "Name": "Hello",
+          "value": [
+            23
+          ],
+          "type": "double"
+        }
+]
+}

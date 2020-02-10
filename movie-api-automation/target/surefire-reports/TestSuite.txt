@@ -1,0 +1,31 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 11, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 5.232 sec <<< FAILURE!
+testGetMovieDetailsByIdShouldHaveLimitOnIDCharacterLength(com.prao.ainterview.tmdb.automation.movies.MoviesAPITest)  Time elapsed: 0.131 sec  <<< FAILURE!
+java.lang.AssertionError: status code was not Httpstatus.SC_UNPROCESSABLE_ENTITY 422 (Unprocessable Entity) status code means expected [422] but found [200]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:652)
+	at com.prao.ainterview.tmdb.automation.movies.MoviesAPITest.testGetMovieDetailsByIdShouldHaveLimitOnIDCharacterLength(MoviesAPITest.java:165)
+
+testGetMovieDetailsByIdShouldNotAcceptNegativeNumbersAsID(com.prao.ainterview.tmdb.automation.movies.MoviesAPITest)  Time elapsed: 0.105 sec  <<< FAILURE!
+java.lang.AssertionError: status code was not Httpstatus.SC_UNPROCESSABLE_ENTITY 422 (Unprocessable Entity) status code means expected [422] but found [404]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:652)
+	at com.prao.ainterview.tmdb.automation.movies.MoviesAPITest.testGetMovieDetailsByIdShouldNotAcceptNegativeNumbersAsID(MoviesAPITest.java:185)
+
+testGetMovieDetailsByIdShouldThrowMeaningfulErrorForInvalidLanguageString(com.prao.ainterview.tmdb.automation.movies.MoviesAPITest)  Time elapsed: 1.161 sec  <<< FAILURE!
+java.lang.AssertionError: status code was not Httpstatus.SC_UNPROCESSABLE_ENTITY 422 (Unprocessable Entity) status code means expected [422] but found [200]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:652)
+	at com.prao.ainterview.tmdb.automation.movies.MoviesAPITest.testGetMovieDetailsByIdShouldThrowMeaningfulErrorForInvalidLanguageString(MoviesAPITest.java:127)
+

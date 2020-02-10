@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [TMDBMoviesTest]">
+  <parameter name="config-file" value="qa.configuration.properties"/>
+  <test thread-count="5" verbose="0" name="MovieAPIAll(failed)">
+    <classes>
+      <class name="com.prao.ainterview.tmdb.automation.movies.MoviesAPITest">
+        <methods>
+          <include name="initFramework"/>
+          <include name="testGetMovieDetailsByIdShouldNotAcceptNegativeNumbersAsID"/>
+          <include name="testGetMovieDetailsByIdShouldHaveLimitOnIDCharacterLength"/>
+          <include name="testGetMovieDetailsByIdShouldThrowMeaningfulErrorForInvalidLanguageString"/>
+        </methods>
+      </class> <!-- com.prao.ainterview.tmdb.automation.movies.MoviesAPITest -->
+    </classes>
+  </test> <!-- MovieAPIAll(failed) -->
+</suite> <!-- Failed suite [TMDBMoviesTest] -->

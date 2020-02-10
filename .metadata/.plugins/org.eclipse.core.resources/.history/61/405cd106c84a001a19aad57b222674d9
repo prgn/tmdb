@@ -1,0 +1,71 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.prao.ainterview.tmdb</groupId>
+  <artifactId>movie-api-test-automation</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  
+  <properties>
+        <envType>QA</envType>
+        <suitePath>src/main/resources/test-suite</suitePath>
+        <suite>MovieBasicTestSuite</suite>
+       <maven.compiler.source>1.7</maven.compiler.source>
+    	<maven.compiler.target>1.7</maven.compiler.target>
+    </properties>
+    
+    <dependencies>
+    <dependency>
+    	<groupId>org.springframework.boot</groupId>
+        <artifactId>spring-context</artifactId>
+        <version>4.2.5.RELEASE</version>
+       </dependency>
+    
+    <dependency>
+            <groupId>io.rest-assured</groupId>
+            <artifactId>rest-assured</artifactId>
+            <version>3.0.1</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>6.9.10</version>
+            <scope>compile</scope>
+        </dependency>
+    <dependency>
+            <groupId>com.jayway.jsonpath</groupId>
+            <artifactId>json-path</artifactId>
+            <version>2.2.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.googlecode.json-simple</groupId>
+            <artifactId>json-simple</artifactId>
+            <version>1.1.1</version>
+        </dependency>
+    </dependencies>
+    
+    <profiles>
+        <profile>
+            <id>integrationtest</id>
+            <build>
+                <plugins>
+                    <plugin>
+                    
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-surefire-plugin</artifactId>
+                        <version>2.17</version>
+                        <configuration>
+                            <suiteXmlFiles>
+                                <suiteXmlFile>${suitePath}/${suite}.xml</suiteXmlFile>
+                            </suiteXmlFiles>
+                            <skip>false</skip>
+                            <systemPropertyVariables>
+                                <environment>${envType}.configuration.properties</environment>
+                            </systemPropertyVariables>
+                            <workingDirectory>${basedir}/</workingDirectory>
+                        </configuration>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
+</project>

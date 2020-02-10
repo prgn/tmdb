@@ -1,0 +1,10 @@
+{  
+   "list":[  
+      
+      {  
+      	"parentSourceKey": "${apm.ROOT_ENTERPRISE}",
+      	"parentClassificationCode": "",
+         "name":"EN234"
+      }
+   ]
+}

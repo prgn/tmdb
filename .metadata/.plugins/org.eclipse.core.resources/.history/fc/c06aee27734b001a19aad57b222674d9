@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="TMDBMoviesTest" verbose="1" preserve-order="true">
+	<parameter name="config-file" value="${envType}.configuration.properties"></parameter>
+  	<test name="MovieAPIAll">
+	 <classes>
+		 <class name="com.prao.ainterview.tmdb.automation.movies.MoviesAPITest">
+		  <method>
+		  <include name=name="testGetPopularMovieIdWorksForInternalLanguageCode"/>
+		  </method>
+     	 </class>
+    </classes>
+	</test>
+</suite>

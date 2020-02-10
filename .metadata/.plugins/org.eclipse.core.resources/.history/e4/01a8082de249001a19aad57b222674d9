@@ -1,0 +1,19 @@
+{"list": [
+    {
+         "parentSourceKey": "${apm.asset.siteSourceKey}",
+          "parentClassificationCode": "ENTERPRISE",
+           "name": "A7",
+           "gatewaySourceKey": "${apm.asset.gatewaySourceKey}",
+           "identifier": {
+                        "serialNumber": "1165",
+                        "virtualSerialNumber": "02233440",
+                        "macAddress": "si20:6t04:dr34",
+                        "externalRefId": "EXT REF ID"
+           },
+           "catalog": {
+                        "type": "SUBMETER",
+                        "model": "SUBMETER_MODEL"
+           }
+    }
+ ]
+}    

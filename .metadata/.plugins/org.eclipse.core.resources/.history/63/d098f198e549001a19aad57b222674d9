@@ -1,0 +1,5 @@
+package com.prao.ainterview.tmdb.automation.movies;
+
+public class MoviesAPITest {
+
+}

@@ -1,0 +1,114 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="APMDataCreationTest" verbose="1" preserve-order="true">
+	<test name="APMTestPostiveScenario" >
+		<classes>
+			<class name="com.ge.current.em.automation.ui.APMPostTest">
+				<methods>
+					<include name="postEnterprisewithvalidinputs" />
+					<include name="creatingSiteswithvalidinputs" />
+					<include name="creatingAssetwithvalidinputs" />
+					<include name="createAssetTypeValidInputs" />
+					<include name="creatingSiteGatewaywithvalidinputs" />
+					<include name="createAssetModelTypeValidInputs" />
+					<include name="creatingRegionwithvalidinputs" />
+					<include name="creatingSegmentwithvalidinputs" />
+					<include name="createTagTypes" />
+					<include name="creatingLocationwithvalidinputs" />
+					<include name="creatingSitetagswithvalidinputs" />
+					<include name="postEnterpriseTagwithvalidinputs"/>
+					<include name="creatingSegmentTagwithvalidinputs"/>
+					<include name="bulkDataCreation"/>
+					<include name="creatingAssetUnderSegment"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="APMTestEnterpriseCreate">
+		<classes>
+			<class name="com.ge.current.em.automation.ui.APMPostTest">
+				<methods>
+					<include name="postEnterpriseNegativeCase" />
+					<include name="postEnterpriseinvalidContentType" />
+					<include name="postEnterpriseinvalidURL" />
+					<include name="postEnterprisewithnullbody" />
+					<!-- <include name="postEnterpriseTaginvalidContentType" /> -->
+					<include name="postEnterpriseTagNegativeCase" />
+					<!-- <include name="postEnterpriseTaginvalidURL" /> -->
+					<include name="postEnterpriseTagwithnullbody" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="APMTestAssetCreate">
+		<classes>
+			<class name="com.ge.current.em.automation.ui.APMPostTest">
+				<methods>
+					<include name="CreatingAssetsNegativeCase" />
+					<include name="postAssetsinvalidContentType" />
+					<include name="postAssetsTaginvalidURL" />
+					<include name="postCreateAssetswithnullbody" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="APMTestSiteCreate">
+		<classes>
+			<class name="com.ge.current.em.automation.ui.APMPostTest">
+				<methods>
+					<include name="creatingSitesNegativeCase" />
+					<include name="postSitesinvalidContentType" />
+					<include name="postSitesinvalidURL" />
+					<include name="postSiteswithnullbody" />
+					<include name="creatingSitesTagNegativeCase" />
+					<!-- <include name="postSitesTaginvalidContentType" /> -->
+					<include name="postSitestaginvalidURL" />
+					<include name="postSitestagwithnullbody" />
+					<include name="creatingSitesGatewayNegativeCase" />
+					<!-- <include name="postSitesGatewayinvalidContentType" /> -->
+					<include name="postSitesGatewayinvalidURL" />
+					<include name="postSitesGatewaywithnullbody" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="APMTestSegmentCreate">
+		<classes>
+			<class name="com.ge.current.em.automation.ui.APMPostTest">
+				<methods>
+					<include name="creatingSegmentNegativeCase" />
+					<include name="postSegmentinvalidContentType" />
+					<include name="postSegmentTaginvalidURL" />
+					<include name="postSegmentwithnullbody" />
+					<include name="creatingSegmentTagNegativeCase" />
+					<!-- <include name="postSegmentTaginvalidContentType" /> -->
+					<!-- <include name="postSegmentinvalidURL" />--> 
+					<include name="postSegmentTagwithnullbody" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="APMTestRegionCreate" >
+		<classes>
+			<class name="com.ge.current.em.automation.ui.APMPostTest">
+				<methods>
+					<include name="CreatingRegionNegativeCase" />
+					<include name="postRegoninvalidContentType" />
+					<include name="postRegionTaginvalidURL" />
+					<include name="postCreateRegionWithnullbody" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="APMTestLocationCreate">
+		<classes>
+			<class name="com.ge.current.em.automation.ui.APMPostTest">
+				<methods>
+					<include name="creatingLocationNegativeCase" />
+				<!-- 	<include name="postLocationinvalidContentType" /> -->
+					<include name="postLocationTaginvalidURL" />
+					<include name="postLocationwithnullbody" />
+				</methods>
+			</class>
+		</classes>
+	</test> 
+</suite>

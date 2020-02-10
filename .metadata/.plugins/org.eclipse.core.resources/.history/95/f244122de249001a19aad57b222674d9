@@ -1,0 +1,25 @@
+{
+	"list": [
+        {
+          "id": "name",
+          "value": [
+            ""
+          ],
+          "type": "string"
+        },
+        {
+          "id": "age",
+          "value": [
+            ""
+          ],
+          "type": "numbe"
+        },
+        {
+          "id": "gender",
+          "value": [
+            "male"
+          ],
+          "type": "string"
+        }
+]
+}
