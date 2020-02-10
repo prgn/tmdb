@@ -10,6 +10,8 @@ When the above command is executed :
 
 · enviroment file qa.config.properties is chosen to dyamically insert the environment related information like the url and other env sensitive data
 
+## Domain
+These autoamtion tests focus on the  is a free community built database of movie and TV meta data. : https://developers.themoviedb.org/3/getting-started/introduction
 
 ## Software limitation
 Due to more groovy realted integration issues found JRE version has been lowered to JRE8.
