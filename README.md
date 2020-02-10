@@ -14,4 +14,4 @@ When the above command is executed :
 These autoamtion tests focus on a free community built database of movie and TV meta data : https://developers.themoviedb.org/3/getting-started/introduction
 
 ## Software limitation
-Due to more groovy realted integration issues found JRE version has been lowered to JRE8.
+Due to some groovy related integration issues found, JRE version has been lowered to JRE8.
